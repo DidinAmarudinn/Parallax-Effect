@@ -85,9 +85,9 @@ class _HomePageState extends State<HomePage> {
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(8))),
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 24),
+                    padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
                     child: Text(
-                      "Start From Here",
+                      "Explore",
                       style: whiteSemiBoldTextStyle,
                     ),
                   ),

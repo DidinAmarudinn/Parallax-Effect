@@ -16,7 +16,7 @@ class ParallaxFlowDelegate extends FlowDelegate {
   @override
   BoxConstraints getConstraintsForChild(int i, BoxConstraints constraints) {
     return BoxConstraints.tightFor(
-      height: constraints.maxHeight
+      width: constraints.maxWidth * 1.5
     );
   }
 

@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:parallax_effect/glassmorpishm.dart';
 import 'package:parallax_effect/locations.dart';
@@ -45,11 +46,9 @@ class _TravelImageCardState extends State<TravelImageCard> {
                 backgroundImageKey: _imageKey,
               ),
               children: [
-                Image.network(
-                  widget.location.imageUrl,
-                  fit: BoxFit.cover,
+                CachedNetworkImage(
                   key: _imageKey,
-                ),
+                  imageUrl: widget.location.imageUrl, fit: BoxFit.cover,)
               ],
             ),
             Positioned(

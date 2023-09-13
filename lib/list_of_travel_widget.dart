@@ -16,7 +16,9 @@ class _ListOfTravelWidgetState extends State<ListOfTravelWidget> {
   @override
   void initState() {
     super.initState();
-    _pageController = PageController(viewportFraction: 0.75,);
+    _pageController = PageController(
+      viewportFraction: 0.8,
+    );
   }
 
   @override
